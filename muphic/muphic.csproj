@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD4878BB-D38B-46C3-BC54-BC5F118B9A33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Muphic</RootNamespace>
+    <AssemblyName>muphic</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Images\muphic.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\x86\Debug\muphic.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\x86\Release\muphic.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JpnKanaConversion, Version=1.0.1.0, Culture=neutral, PublicKeyToken=fd2deb9ec9e60ff4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio International Pack\Japanese Kana Converter Library\JpnKanaConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="JpnKanaConvHelper, Version=1.0.1.0, Culture=neutral, PublicKeyToken=f107c6e5af142f74, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio International Pack\Japanese Kana Converter Library\JpnKanaConvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2909.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive\ArchiveFileInfo.cs" />
+    <Compile Include="Archive\ArchiveController.cs" />
+    <Compile Include="Archive\ArchiveFileType.cs" />
+    <Compile Include="Manager\JpnLangInputManager.cs" />
+    <Compile Include="PlayerWorks\Author.cs" />
+    <Compile Include="MainWindow_EntryPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_ErrorProc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_Ime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Button.cs" />
+    <Compile Include="Common\Dialog.cs" />
+    <Compile Include="Common\DialogParts\Buttons\BackButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\DecisionButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\LowerScrollButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\NoButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\SelectButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\UpperScrollButton.cs" />
+    <Compile Include="Common\DialogParts\Buttons\YesButton.cs" />
+    <Compile Include="Common\DialogParts\DialogIcon.cs" />
+    <Compile Include="Common\DialogParts\DialogMessage.cs" />
+    <Compile Include="Common\DialogParts\DialogTitle.cs" />
+    <Compile Include="Common\DialogParts\Locations.cs" />
+    <Compile Include="Common\DialogParts\SelectArea.cs" />
+    <Compile Include="Common\DialogParts\WaitingAnimation.cs" />
+    <Compile Include="Common\Explorer.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\CancelButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\DirectoryLowerScrollButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\DirectoryUpperScrollButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\DirectorySelectButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\FileLowerScrollButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\FileSelectButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\FileUpperScrollButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\LoadButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\PrintButton.cs" />
+    <Compile Include="Common\ExplorerParts\Buttons\ReloadButton.cs" />
+    <Compile Include="Common\ExplorerParts\DirectorySelectArea.cs" />
+    <Compile Include="Common\ExplorerParts\FileSelectArea.cs" />
+    <Compile Include="Common\ExplorerParts\Settings.cs" />
+    <Compile Include="Common\ExplorerParts\WorkInfoArea.cs" />
+    <Compile Include="Common\Parts.cs" />
+    <Compile Include="Common\Screen.cs" />
+    <Compile Include="Common\Title.cs" />
+    <Compile Include="CompositionScreenParts\Animal.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\CreateNewButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\ScoreButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\ScoreLoadButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\ScoreSaveButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\TempoDownButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\TempoUpButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\TitleButton.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\AnimalScore.cs" />
+    <Compile Include="CompositionScreenParts\AnimalButtons.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\BirdButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\CatButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\DeleteButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\DogButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\PigButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\RabbitButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\SheepButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\Animals\VoiceButton.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\Buttons\LeftScrollButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\PlayContinueButton.cs" />
+    <Compile Include="CompositionScreenParts\Buttons\PlayFirstButton.cs" />
+    <Compile Include="CompositionScreen.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\Buttons\RightScrollButton.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMain.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\ScoreBackground.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\ScrollBar.cs" />
+    <Compile Include="CompositionScreenParts\AnimalHoming.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\SignBorad.cs" />
+    <Compile Include="CompositionScreenParts\CompositionMainParts\HouseLight.cs" />
+    <Compile Include="CompositionScreenParts\Dialogs\CreateNewDialog.cs" />
+    <Compile Include="CompositionScreenParts\Dialogs\ScoreLoadDialog.cs" />
+    <Compile Include="CompositionScreenParts\Dialogs\ScoreSaveDialog.cs" />
+    <Compile Include="CompositionScreenParts\Locations.cs" />
+    <Compile Include="CompositionScreenParts\SubScreens\ScoreEntitleScreen.cs" />
+    <Compile Include="CompositionScreenParts\SubScreens\SubScreenParts\TitleDecisionButton.cs" />
+    <Compile Include="CompositionScreenParts\Tempo.cs" />
+    <Compile Include="Configuration\ConfigurationData.cs" />
+    <Compile Include="EntitleScreen.cs" />
+    <Compile Include="EntitleScreenParts\Alphabet\AlphabetButton.cs" />
+    <Compile Include="EntitleScreenParts\Alphabet\AlphabetButtons.cs" />
+    <Compile Include="EntitleScreenParts\Alphabet\AlphabetCategoryButton.cs" />
+    <Compile Include="EntitleScreenParts\Hiragana\HiraganaButton.cs" />
+    <Compile Include="EntitleScreenParts\Hiragana\HiraganaCategoryButton.cs" />
+    <Compile Include="EntitleScreenParts\Katakana\KatakanaButton.cs" />
+    <Compile Include="EntitleScreenParts\Katakana\KatakanaCategoryButton.cs" />
+    <Compile Include="EntitleScreenParts\Locations.cs" />
+    <Compile Include="EntitleScreenParts\Number\NumberButton.cs" />
+    <Compile Include="EntitleScreenParts\Number\NumberCategoryButton.cs" />
+    <Compile Include="EntitleScreenParts\OtherButtons\AllDeleteButton.cs" />
+    <Compile Include="EntitleScreenParts\CharacterButton.cs" />
+    <Compile Include="EntitleScreenParts\OtherButtons\SingleDeleteButton.cs" />
+    <Compile Include="EntitleScreenParts\Hiragana\HiraganaButtons.cs" />
+    <Compile Include="EntitleScreenParts\Katakana\KatakanaButtons.cs" />
+    <Compile Include="EntitleScreenParts\Number\NumberButtons.cs" />
+    <Compile Include="EntitleScreenParts\TitleArea.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_MainLoop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeStoryScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\AllDeleteButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\BackButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\CategoryButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\CompositionButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\CreateNewButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\DeleteButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\PlayButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\PrintButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\SentenceButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\StampSelectButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\StoryLoadButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\StorySaveButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\SubmitButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Buttons\TitleButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\AllDeleteDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\BackDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\CreateNewDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\DialogParts\NameInputButton.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\NameInputDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\StoryLoadDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\StorySaveDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Dialogs\SubmitDialog.cs" />
+    <Compile Include="MakeStoryScreenParts\Locations.cs" />
+    <Compile Include="MakeStoryScreenParts\MakeStoryMainParts\Character.cs" />
+    <Compile Include="MakeStoryScreenParts\MakeStoryMainParts\Item.cs" />
+    <Compile Include="MakeStoryScreenParts\PictureWindow.cs" />
+    <Compile Include="MakeStoryScreenParts\Slide.cs" />
+    <Compile Include="MakeStoryScreenParts\MakeStoryMainParts\Stamp.cs" />
+    <Compile Include="MakeStoryScreenParts\StampHoming.cs" />
+    <Compile Include="MakeStoryScreenParts\MakeStoryMainParts\StampSelectArea.cs" />
+    <Compile Include="PlayerWorks\StoryData.cs" />
+    <Compile Include="MakeStoryScreenParts\StoryPrinter.cs" />
+    <Compile Include="MakeStoryScreenParts\StorySentence.cs" />
+    <Compile Include="MakeStoryScreenParts\StoryTitle.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\NameInputScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\PlayStoryScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\StoryCompositionScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\StoryEntitleScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SentenceInputScreen.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\StoryExplorer.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\BackFromCompositionButton.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\BackFromPlayStoryButton.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\LimitSelectArea.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\LimitSelectButton.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\NameDecisionButton.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\StoryCompositionThumbnail.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\TitleDecisionButton.cs" />
+    <Compile Include="MakeStoryScreenParts\SubScreens\SubScreenParts\SentenceDecisionButton.cs" />
+    <Compile Include="MakeStoryScreenParts\ThumbnailParts\NextSlideButton.cs" />
+    <Compile Include="MakeStoryScreenParts\ThumbnailParts\PrevSlideButton.cs" />
+    <Compile Include="MakeStoryScreenParts\ThumbnailParts\Thumbnail.cs" />
+    <Compile Include="MakeStoryScreenParts\ThumbnailParts\ThumbnailArea.cs" />
+    <Compile Include="Manager\ArchiveFileManager.cs" />
+    <Compile Include="Manager\ConfigurationManager.cs" />
+    <Compile Include="Manager\KeyboardInputManager.cs" />
+    <Compile Include="Manager\Manager.cs" />
+    <Compile Include="Manager\NetworkManager.cs" />
+    <Compile Include="Manager\PrintManager.cs" />
+    <Compile Include="NameInputScreen.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\NameDecisionButton.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player1BoyButton.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player1Button.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player1GirlButton.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player2BoyButton.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player2Button.cs" />
+    <Compile Include="NameInputScreenParts\Buttons\Player2GirlButton.cs" />
+    <Compile Include="NameInputScreenParts\Locations.cs" />
+    <Compile Include="NameInputScreenParts\PlayerNameBackup.cs" />
+    <Compile Include="PlayStoryScreen.cs" />
+    <Compile Include="PlayStoryScreenParts\Buttons\PlayButton.cs" />
+    <Compile Include="ScoreScreen.cs" />
+    <Compile Include="ScoreScreenParts\AnimalLabel.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\BackButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\BirdButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\CatButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\DogButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\FullScoreButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\PigButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\PrintButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\RabbitButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\ScrollBackButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\ScrollNextButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\SheepButton.cs" />
+    <Compile Include="ScoreScreenParts\Buttons\VoiceButton.cs" />
+    <Compile Include="ScoreScreenParts\Dialogs\PrintDialog.cs" />
+    <Compile Include="ScoreScreenParts\Locations.cs" />
+    <Compile Include="ScoreScreenParts\Meter.cs" />
+    <Compile Include="ScoreScreenParts\ScoreMain.cs" />
+    <Compile Include="ScoreScreenParts\TextureList.cs" />
+    <Compile Include="Settings\ResourceNames.cs" />
+    <Compile Include="Settings\SystemSettings.cs" />
+    <Compile Include="SubForms\FirstLaunchWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\FirstLaunchWindow.Designer.cs">
+      <DependentUpon>FirstLaunchWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Player\StoryPlayer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\DebugWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\DebugWindow.Designer.cs">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\SystemInfoManager.cs" />
+    <Compile Include="Tools\Player\ScorePlayer.cs" />
+    <Compile Include="Tools\MakeStoryTools.cs" />
+    <Compile Include="Manager\DrawManager.cs" />
+    <Compile Include="Manager\FrameManager.cs" />
+    <Compile Include="Manager\LogFileManager.cs" />
+    <Compile Include="Manager\RectangleManager.cs" />
+    <Compile Include="Manager\SoundManager.cs" />
+    <Compile Include="Manager\StringManager.cs" />
+    <Compile Include="Manager\TextureFileManager.cs" />
+    <Compile Include="Manager\TextureNameManager.cs" />
+    <Compile Include="OneScreen.cs" />
+    <Compile Include="OneScreenParts\Buttons\BackButton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\DebugWindow.resx">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\FirstLaunchWindow.resx">
+      <DependentUpon>FirstLaunchWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Settings\System.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>System.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\PartsLocation.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>PartsLocation.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Settings\System.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>System.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings\PartsLocation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>PartsLocation.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StatusArgs.cs" />
+    <Compile Include="Tools\CommonTools.cs" />
+    <Compile Include="Tools\DebugTools.cs" />
+    <Compile Include="Tools\IO\XmlFileReader.cs" />
+    <Compile Include="Tools\IO\XmlFileWriter.cs" />
+    <Compile Include="PlayerWorks\ScoreData.cs" />
+    <Compile Include="Tools\CompositionTools.cs" />
+    <Compile Include="Tools\Printer\StoryPrinter.cs" />
+    <Compile Include="Tools\ScoreTools.cs" />
+    <Compile Include="Tools\TestIME.cs">
+    </Compile>
+    <Compile Include="TopScreenParts\Buttons\EndButton.cs" />
+    <Compile Include="TopScreenParts\Buttons\LinkButton.cs" />
+    <Compile Include="TopScreenParts\Buttons\NameInputButton.cs" />
+    <Compile Include="TopScreenParts\Buttons\OneButton.cs" />
+    <Compile Include="TopScreenParts\Buttons\StoryButton.cs" />
+    <Compile Include="TopScreen.cs" />
+    <Compile Include="TopScreenParts\Locations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\SplashWindowImage.png" />
+    <None Include="Images\muphic.ico" />
+    <Content Include="Settings\PartsLocation.memo.txt" />
+    <Content Include="Settings\System.memo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Manager\Configuration.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Settings\PartsLocation.memo.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Settings\System.memo.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

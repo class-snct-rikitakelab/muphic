@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConfigurationTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ErrorLogFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic_conf.log</Value>
+    </Setting>
+    <Setting Name="MuphicFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic.exe</Value>
+    </Setting>
+    <Setting Name="MuphicProductName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic</Value>
+    </Setting>
+    <Setting Name="DeveloperAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">a0825@ccedu.sendai-ct.ac.jp</Value>
+    </Setting>
+    <Setting Name="PrinterSelectDefaultValue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">印刷に使用するプリンタの選択</Value>
+    </Setting>
+    <Setting Name="MuphicLogFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic.log</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

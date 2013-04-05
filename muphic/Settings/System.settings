@@ -1,0 +1,84 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Muphic.Settings" GeneratedClassName="System">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowSize_Height" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="WindowSize_Width" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">800</Value>
+    </Setting>
+    <Setting Name="WindowTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic</Value>
+    </Setting>
+    <Setting Name="Composition_HouseLightTime" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="AlphaBlending_PartsDisabled" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="AlphaBlending_PartsEnabled" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">255</Value>
+    </Setting>
+    <Setting Name="EnabledNowLoading" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FileExtension_ScoreData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.xml</Value>
+    </Setting>
+    <Setting Name="FileExtension_StoryData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.xml</Value>
+    </Setting>
+    <Setting Name="Composition_MaxTitleLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="StoryMake_MaxTitleLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="StoryMake_MaxSentenceLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">31</Value>
+    </Setting>
+    <Setting Name="StoryMake_MaxPage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ApplicationMutexName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic_v7</Value>
+    </Setting>
+    <Setting Name="AlphaBlending_CursorHoming" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">128</Value>
+    </Setting>
+    <Setting Name="StoryMake_DefaultTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">あたらしいものがたり</Value>
+    </Setting>
+    <Setting Name="StoryPlayer_InterludeFrame" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="MuphicYellow" Type="System.Drawing.Color" Scope="Application">
+      <Value Profile="(Default)">255, 255, 160</Value>
+    </Setting>
+    <Setting Name="StoryComposition_DefaultTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ものがたり %str1%ページめ</Value>
+    </Setting>
+    <Setting Name="Arguments_ConfigMode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">-config</Value>
+    </Setting>
+    <Setting Name="ArchiveHeaderBytes" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="CompositionMeterNum" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="MemoryCheckSpan" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MuphicConfigFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic 動作設定ツール.exe</Value>
+    </Setting>
+    <Setting Name="MuphicConfigProductName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ConfigurationTool</Value>
+    </Setting>
+    <Setting Name="PlayerName_MaxLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

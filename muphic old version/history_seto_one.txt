@@ -1,0 +1,81 @@
+8.9
+　久しぶりにやったような気がする。
+　とりあえずXGA化完了。あと、新しく追加されたボタンについても配置だけは完了。
+　　(猫、声、クリア、すべてクリア、シャープ、声追加)
+　フルスクリーン表示を行うためにDrawManagerをVer.4にアップ(あと、Escキーでプログラムを終了できるようにした)
+　あと、看板については実装完了。(再生中は表示すべきか？どうか？)
+　次はとりあえず、再生中動物が家に当たった時に光る処理を直してから始めたほうがいいと思われ
+
+8.29 version3.1.1改造(ローカルバージョン ver1.0.0)
+　久しぶりにやったような気がするw
+　BaseクラスにDragメソッドを追加。
+　ScreenクラスにDragBegin,DragEndメソッドを追加
+　まず、DragBeginメソッドで、開始したと時どの部品を選択しているかを格納する。そして、選択されたものがScreen型の
+場合は、再帰呼び出しを行う。(末端のScreenまで、どこが選択されているかを格納させる)
+　その後、Dragメソッドで、開始したときの部品のDragメソッドを呼ぶ(選択されたものがScreen型でもBaseでも関係なし)
+　んで、末端の部品でDrag処理を行わせ、
+DragEndメソッドで選択していたものを解除する(-1にする)これも選択されたものがScreen型の場合は再帰呼び出しを行う。
+
+　ドラッグ機能を付けたので、スクロールバーを動かすようにした。
+　スクロールバーはScreen型で宣言されていることに注意すること。
+　あと、Score.RightScroll,LeftScrollメソッドはChangeScrollを介してNowPlaceを設定するように変更した。
+　スクロールバーによっての変更もChangeScroll(オーバーロード)を介して変更する。
+
+　最後に、PointManagerのSetメソッドは、重複していた場合格納放棄ではなく、上書きとした。
+　　　　　Screen.Drawメソッドで、部品はVisible==falseで非表示になるが、this.Visible==falseで非表示にならないエラーを修正
+
+　今回変えた重要ファイル：MainScreen, TopScreen, Base, Screen, PointManager, Score
+　今回変えたローカルファイル:ScrollBar(New)
+
+8.31 ローカルバージョン1.1.0
+　AnimalsにSearch,RePlaceメソッドを追加。動物達の検索と再配置が可能に。
+　あと、ScoreにDragBegin,Dragメソッドを追加し、動物の再配置が可能になった。
+　SoundManagerもいじくって、8分音符2連撃に対応。
+
+　今回変えた重要ファイル：Animals, Score, SoundManager
+
+9.3 ローカルバージョン1.2.0
+　動物選択機能を追加。現在選択されている動物を"もどす"ボタンを使って削除することができるようになった。
+　AnimalsにClickAnimal,Delete()メソッドを追加。動物の選択と、現在選択されている動物の削除が可能に。
+　ScoreのClickメソッドをいじくった。
+　　if(ClickMode == ClickMode.Cancel)の文は必要ないので削除。
+　　また、if文の後にClickAnimalを呼び出して、動物を選択させるようにしている。
+　ClearButtonの内容も変更している。ClickModeをCancelにするのではなく、AnimalsのDelete()メソッドを呼んでいる。
+　最後に、OneButtonClickModeにCancelが必要なくなったので、コメントアウトしている。それに合わせて、
+OneButtonsのnowClickプロパティもコメントアウトしている。
+
+　今回変えた重要ファイル：Animals, Score, ClearButton, OneButtons, (enum)OneButtonsClickMode
+　
+　9.14 ver3.1.7 (ローカルバージョン1.4.0)
+　　合宿中は何も書いてないが気にしない
+　　　・戻るボタンが、最初っから表示されてる点を修正
+　　　・SignBoardが動くように(動物もつけたほうがいいかと)
+　　　・スクロールバーの調整(バーが無いところをクリックすると1小節だけ移動する)
+　　　
+　今回変えた重要ファイル
+　今回変えたローカルファイル：SignBoard, ClearButton, ScrollBar
+　
+　10.1 ver5.0.1 (ローカルバージョン？？？)
+　　今日はやること多いよ
+　　再生中の動物表示関係
+　　　・AnimalsのDrawPlaying,DrawNotPlayingを対応形式に変えた
+　　　・ScoreToolsにinScoreなるメソッドを追加した
+　　　・Link\ScoreのDraw関係もAnimalsと同じように直した
+　　　動物たちのVisibleの仕様が変わったことに注意(以前は、道より右のやつもtrue)
+　　　
+　今回変えた重要ファイル：Animals,Common.ScoreTools,Link\Score
+　今回変えたローカルファイル：
+　
+　　　ver5.0.1 (C++++ver2)
+　　これからボタンのあれをやるから、念のためバックアップを取ってみた
+　変更したもの
+　OneScreen
+　　Tempo, TempoButton, One\RightButtons\, OneButtons
+　　※よく考えると、StartStopボタンに関してはマンダム(state=1は止まるボタン)
+　ScoreScreen
+　　ScoreButtons, ScoreScr\UnderButtons\
+　　
+　Link,LinkMakeScreen
+　　ClearButton
+　MakeStoryScreen
+　　PartsButtons\

@@ -1,0 +1,125 @@
+アプリケーション設定ファイル"PartsLocation.settings"
+各部を構成する部品の表示座標を一元管理する
+
+======================================================================================================================================================
+トップ画面
+------------------------------------------------------------------------------------------------------------------------
+TopScr_OneBtn						トップ画面のひとりでおんがく選択ボタン
+TopScr_LinkBtn						トップ画面のつなげておんがく選択ボタン
+TopScr_StoryBtn						トップ画面のものがたりおんがく選択ボタン
+TopScr_EndBtn						トップ画面の終了ボタン
+
+======================================================================================================================================================
+汎用ダイアログ
+------------------------------------------------------------------------------------------------------------------------
+Dialog_Title						ダイアログのタイトル表示座標
+Dialog_Message						ダイアログのメッセージ表示座標
+Dialog_Icon							ダイアログのアイコン表示座標
+Dialog_YesNo_YesButton				はい/いいえボタン時のはいボタン表示座標（ダイアログ左上を(0,0)とした相対座標）
+Dialog_YesNo_NoButton				はい/いいえボタン時のいいえボタン表示座標（ダイアログ左上を(0,0)とした相対座標）
+Dialog_Yes_YesButton				はいボタン時のはいボタン表示座標（ダイアログ左上を(0,0)とした相対座標）
+Dialog_FileSelect_BackButton		ファイル選択時のもどるボタン表示座標（ダイアログ左上を(0,0)とした相対座標）
+Dialog_FileSelectArea				ファイル選択時の白背景（ダイアログ左上を(0,0)とした相対座標）
+
+======================================================================================================================================================
+汎用作曲画面
+------------------------------------------------------------------------------------------------------------------------
+CompositionScr						汎用作曲画面
+CompositionScr_CompositionArea		作曲を行うスペース(楽譜)  Scoreと違い、スクロール領域を含む緑の部分
+CompositionScr_AnimalButtons		画面右の各動物ボタンの領域
+CompositionScr_AnimalBtn1~8			画面右の各動物/削除ボタンの表示座標
+CompositionScr_ScoreBtn				楽譜ボタンの表示座標
+CompositionScr_SaveBtn				書き込みボタンの表示座標
+CompositionScr_LoadBtn				読み込みボタンの表示座標
+CompositionScr_CreateBtn			新しくつくるボタンの表示座標
+CompositionScr_HouseCenter			家の中央x座標 この座標を超えると音を鳴らすことになる (y座標は使用しない)
+CompositionScr_HouseWindow			家の窓の表示座標 この値は一番上(レ)の音の座標となる それ以下はy座標を40ずつ加える
+CompositionScr_PlayBtn				再生ボタンの表示座標
+CompositionScr_PlayContinueBtn		続きから再生ボタンの表示座標
+CompositionScr_ScrollArea			スクロールバーの領域
+CompositionScr_ScrollLeftBtn		楽譜(道)を左にスクロールするボタンの表示座標
+CompositionScr_ScrollRightBtn		楽譜(道)を右にスクロールするボタンの表示座標
+CompositionScr_Score				楽譜テクスチャの表示座標
+CompositionScr_ScoreRectangle		楽譜(道)の矩形(動物が配置できる領域のみで、スクロールバーの部分等は含まない)
+CompositionScr_ScoreBasePoint		楽譜上での動物の配置基点位置(左上 1小節1音目のレの音の部分)
+CompositionScr_ScoreAnimalSize		楽譜上での動物1匹分の大きさ テクスチャサイズではなく間隔
+CompositionScr_SignBoard1			楽譜(道)で小節区切りとなる看板の表示座標 266,458,650
+CompositionScr_TempoRectangle		テンポボタン部分の領域
+CompositionScr_TempoBg				テンポ表示の背景テクスチャの表示座標
+CompositionScr_TempoLeftBtn			テンポを早くする左向きのボタンの表示座標
+CompositionScr_TempoRightBtn		テンポを遅くする右向きのボタンの表示座標
+CompositionScr_Title				題名表示領域の表示座標
+CompositionScr_TitleBtn				題名ボタンボタンの表示座標
+
+======================================================================================================================================================
+ひとりで音楽画面
+------------------------------------------------------------------------------------------------------------------------
+OneScr_BackBtn						戻るボタンの表示座標
+
+======================================================================================================================================================
+汎用題名入力画面
+------------------------------------------------------------------------------------------------------------------------
+EntitleScr_CharBtnBase				文字ボタンの一番左上にあるボタンの表示座標 （(0,0)位置）
+EntitleScr_CharBtnDiff				文字ボタン同士の表示座標の差
+EntitleScr_DecisionBtn				決定ボタンの表示座標
+EntitleScr_SingleDeleteBtn			1文字削除ボタンの表示座標
+EntitleScr_AllDeleteBtn				全削除ボタンの表示座標
+EntitleScr_EntitleCategory			入力カテゴリ表示の表示座標
+EntitleScr_TitleBG					題名表示部の背景テクスチャ表示座標
+EntitleScr_CharArea					文字ボタン領域
+
+======================================================================================================================================================
+物語作成画面
+------------------------------------------------------------------------------------------------------------------------
+MakeStoryScr						物語作成画面
+MakeStoryScr_CategoryBtn0			カテゴリ選択ボタン（背景１
+MakeStoryScr_CategoryBtn1			カテゴリ選択ボタン（背景２
+MakeStoryScr_CategoryBtn2			カテゴリ選択ボタン（背景３
+MakeStoryScr_CategoryBtn3			カテゴリ選択ボタン（背景４
+MakeStoryScr_CategoryBtn4			カテゴリ選択ボタン（アイテム１
+MakeStoryScr_CategoryBtn5			カテゴリ選択ボタン（アイテム２
+MakeStoryScr_CategoryBtn6			カテゴリ選択ボタン（アイテム３
+MakeStoryScr_CategoryBtn7			カテゴリ選択ボタン（アイテム４
+MakeStoryScr_CategoryBtn8			カテゴリ選択ボタン（人物１
+MakeStoryScr_CategoryBtn9			カテゴリ選択ボタン（人物２
+MakeStoryScr_CategoryBtn10			カテゴリ選択ボタン（人物３
+MakeStoryScr_CategoryBtn11			カテゴリ選択ボタン（人物４
+MakeStoryScr_CategoryBtn12			カテゴリ選択ボタン（動物１
+MakeStoryScr_CategoryBtn13			カテゴリ選択ボタン（動物２
+MakeStoryScr_CategoryBtn14			カテゴリ選択ボタン（動物３
+MakeStoryScr_CategoryBtn15			カテゴリ選択ボタン（動物４
+MakeStoryScr_StampBtn0				スタンプ選択ボタン（０
+MakeStoryScr_StampBtn1				スタンプ選択ボタン（１
+MakeStoryScr_StampBtn2				スタンプ選択ボタン（２
+MakeStoryScr_StampBtn3				スタンプ選択ボタン（３
+MakeStoryScr_StampBtn4				スタンプ選択ボタン（４
+MakeStoryScr_StampBtn5				スタンプ選択ボタン（５
+MakeStoryScr_StampBtn6				スタンプ選択ボタン（６
+MakeStoryScr_StampBtn7				スタンプ選択ボタン（７
+MakeStoryScr_CreateNewBtn			新規作成ボタンの表示座標
+MakeStoryScr_LoadBtn				読込ボタンの表示座標
+MakeStoryScr_SaveBtn				保存ボタンの表示座標
+MakeStoryScr_PrintBtn				印刷ボタンの表示座標
+MakeStoryScr_DeleteBtn				削除ボタンの表示座標
+MakeStoryScr_AllDeleteBtn			全削除ボタンの表示座標
+MakeStoryScr_TitleBtn				題名入力画面性ボタンの表示座標
+MakeStoryScr_SentenceBtn			文章入力画面遷移ボタンの表示座標
+MakeStoryScr_CompositionBtn			作曲画面遷移ボタンの表示座標
+MakeStoryScr_PlayBtn				再生ボタンの表示座標
+MakeStoryScr_BackBtn				トップ画面遷移ボタンの表示座標
+MakeStoryScr_Title					題名表示領域の左上座標
+MakeStoryScr_SentenceBtn			文章表示領域の左上座標
+MakeStoryScr_Thumb1					サムネイル１つ目の表示座標
+MakeStoryScr_Thumb2					サムネイル２つ目の表示座標
+MakeStoryScr_Thumb3					サムネイル３つ目の表示座標
+MakeStoryScr_Thumb4					サムネイル４つ目の表示座標
+MakeStoryScr_Thumb5					サムネイル５つ目の表示座標
+MakeStoryScr_StampSelectArea		スタンプ選択ボタン群領域
+MakeStoryScr_PictureArea			絵の表示領域
+MakeStoryScr_BackgroundPlaceArea	絵の背景（場所の描画領域
+MakeStoryScr_BackgroundSkyArea		絵の背景（空の描画領域
+MakeStoryScr_PictureFrameTop		絵のフレーム（上
+MakeStoryScr_PictureFrameBottom		絵のフレーム（下
+MakeStoryScr_PictureFrameLeft		絵のフレーム（左
+MakeStoryScr_PictureFrameRight		絵のフレーム（右
+

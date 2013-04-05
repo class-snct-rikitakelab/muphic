@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B9B20B4-039D-4C25-8330-D1A35CB95D03}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>icon2.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>muphic</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>muphic</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX">
+      <Name>Microsoft.DirectX</Name>
+      <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\dx_1.0.2902.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D">
+      <Name>Microsoft.DirectX.Direct3D</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\dx_1.0.2902.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX">
+      <Name>Microsoft.DirectX.Direct3DX</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Microsoft.DirectX.Direct3DX.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\dx_1.0.2911.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound">
+      <Name>Microsoft.DirectX.DirectSound</Name>
+      <HintPath>..\..\..\..\..\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectSound.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\dx_1.0.2902.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADV\AdventureMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\MsgWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\MsgWindowParts\EndButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\MsgWindowParts\MainWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\MsgWindowParts\NextButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\MsgWindowParts\VoiceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ADV\PatternData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Animal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Animals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\AutoSave.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\CommonSettings.cs" />
+    <Compile Include="Common\CommonTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Dialog\AllClearDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Dialog\AllClearNoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Dialog\AllClearYesButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\FadeTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ScoreTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\TutorialStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\TutorialTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileNameManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HouseLight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMakeScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\DataFileList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\LinkFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\LinkFileWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SaveDialog\BackButtton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SaveDialog\CharForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SaveDialog\LinkSaveDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SaveDialog\SaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SaveDialog\TitleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\LinkSelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Dialog\SelectDialog\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\House.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\LinkMakeButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\LoadButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\NewMakeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\RestartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\RightButtons\SheepButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\SaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Score.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\AllClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\ClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\LeftScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\RightScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\ScrollBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\SharpButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\ScoreParts\SignBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\StartStopButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Tempo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\TempoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Tsuibi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkMake\WindowParts\Title.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkTop\LinkBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkTop\LinkMakeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkTop\LinkPlayButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinkTop\LinkTop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\AllClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\AnswerButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\LeftScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\LinkButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\ListenButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RestartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\CancelButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep01Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep02Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep03Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep04Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep05Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep06Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep07Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep08Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep09Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightButtons\Sheep10Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\RightScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\ScoreButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Button\StartStopButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\ClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\DataFileList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Answer\AnswerBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Answer\AnswerCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Answer\AnswerDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Answer\AnswerResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\BackButtonDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Listen\ListenBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Listen\ListenBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Listen\ListenDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Listen\ListenSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Listen\ListenStartStopButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LevelEasyButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LevelHardButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LevelNormalButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LinkFileData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LinkFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\LinkFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question01Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question02Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question03Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question04Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question05Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\Question06Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\SelectBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\old\SelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question01Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question02Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question03Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question04Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question05Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\Question06Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\SelectBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\SelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\old\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\SelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Dialog\Select\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\GroupPattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\House.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\HouseLight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\QuestionPattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Score.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\ScrollBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\SignBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Titlebar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Tsuibi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\WindowParts\QuestionNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\WindowParts\RoadThumb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\WindowParts\SheepMini.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link\WindowParts\Title.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeStoryScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\AllClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\ClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\BGDesignList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\DesignList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\DirectionButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\EnvButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\FaceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\ItemButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\ItemDesignList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\DesignList\LivesDesignList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\StorySelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\Dialog_Select\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\NoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\StoryMakeDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\StorySaveDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Dialogs\YesButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\MakeStory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Obj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\AnimalSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\BearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\BGSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\BirdButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\BoyButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\DogButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\FashionButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\FoodButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\ForestButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\FurnitureButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\GirlButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\GoodsButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\HumanSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\ItemSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\LadyButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\ManButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\RiverButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\RoomButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\TownButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PartsButtons\TurtleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PictStory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PrintDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PrintDialog\PrintMemorialButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\PrintDialog\PrintStoryButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\SentenceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Slide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryFileWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryMakeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryPlayButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryPrintButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StoryPrintDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StorySaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\StorySelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Thumbnail\BeforeSlide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Thumbnail\miniwindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Thumbnail\NextSlide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Thumbnail\Thumbnail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\TitleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Tsuibi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeStory\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OneScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\House.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\OneButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RestartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\BirdButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\CatButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\DogButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\PigButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\RabbitButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\SheepButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\RightButtons\VoiceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SaveDialog\BackButtton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SaveDialog\SaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SaveDialog\YesButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\Score.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreFileWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\AllClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\ClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\LeftScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\RightScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\ScrollBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\SharpButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\SignBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreParts\VoiceRecordButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreSaveDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\ScoreSelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectDialog\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectDialog\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectDialog\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\SelectDialog\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\StartStopButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\Tempo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\TempoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\TitleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\TitleForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\Tsuibi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\VoiceDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\VoiceDialog\OneMoreCloseButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\VoiceDialog\StartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\VoiceRegistDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\VoiceRegistOneMoreDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="One\WindowParts\Title.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\Curtain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\PlayBackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\PlayScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\PlayStartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\Reproducer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Play\Sentence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PointManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrintManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\DeleteTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\DownScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\DrawData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\PrintButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\PrintDialog\NoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\PrintDialog\YesButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ReadButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SaveDialog\BackButtton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SaveDialog\CharForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SaveDialog\SaveButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SaveDialog\TitleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\Score.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreFileReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreFileWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScorePrintDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreSaveDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreSelectDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreTitleArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\ScoreWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SelectDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SelectDialog\LowerScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SelectDialog\SelectButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SelectDialog\SelectButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\SelectDialog\UpperScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\AllButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\BirdButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\CatButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\DogButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\PigButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\RabbitButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\SheepButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UnderButtons\VoiceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\UpScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScoreScr\WriteButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoryScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\House.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RestartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\BirdButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\CatButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\DogButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\PigButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\RabbitButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\SheepButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\RightButtons\VoiceButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\Score.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\AllClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\ClearButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\LeftScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\RightScrollButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\ScrollBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\SharpButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\SignBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\ScoreParts\VoiceRecordButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\StartStopButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\StoryButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\Tempo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\TempoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\Tsuibi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\VoiceDialog\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\VoiceDialog\OneMoreCloseButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\VoiceDialog\StartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\VoiceRegistDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\VoiceRegistOneMoreDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\WindowParts\Thumbnail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Story\WindowParts\Title.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Alpha\AlphaButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Alpha\AlphaScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\CharScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\DecisionButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\DelAllButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\DelButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Hira\HiraButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Hira\HiraScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Kata\KataButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Kata\KataScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\ModeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Num\NumButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\Num\NumScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Title\TitleScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TopScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Top\EndButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Top\LinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Top\OneButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Top\StoryButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Top\TutorialButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\CursorControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialEndDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialEndDialogParts\NoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialEndDialogParts\YesButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialSPParts\CheckButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialSPParts\CompleteButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialSPParts\HintButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialStartParts\BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialStartParts\ChapterStartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialStartParts\ContinueButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\TutorialStartParts\StartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VoiceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\Chunk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\FFT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\makesound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\ReadMediaFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\ReadWaveFile_Riff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\Wave_Riff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\WriteMediaFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Voice\WriteWaveFile_Riff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="cursor_off.cur" />
+    <EmbeddedResource Include="cursor_on.cur" />
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラ 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

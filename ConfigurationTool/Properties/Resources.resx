@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DialogTitle_LogFileSave" xml:space="preserve">
+    <value>ログファイルの保存先を選択してください</value>
+  </data>
+  <data name="DialogTitle_ScoreDataSaveFolder" xml:space="preserve">
+    <value>曲の保存先のフォルダを指定してください</value>
+  </data>
+  <data name="DialogTitle_StoryDataSaveFolder" xml:space="preserve">
+    <value>物語の保存先のフォルダを指定してください</value>
+  </data>
+  <data name="DialogTitle_SubmissionPath" xml:space="preserve">
+    <value>ファイルの提出先を選択してください</value>
+  </data>
+  <data name="ErrorMsg_Log_ThreadException" xml:space="preserve">
+    <value>● %str1% に発生した例外 =====
+%str2%
+このエラーに関する情報を、開発者に問い合わせてください。
+
+</value>
+  </data>
+  <data name="ErrorMsg_Show_CommonCaption" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="ErrorMsg_Show_FailureDirectX" xml:space="preserve">
+    <value>DirectX が正常にインストールされていない可能性があります。
+muphic の動作には、DirectX 9.0c が必要です。
+
+エラーの詳細については、以下のログファイルを参照して下さい。
+%str1%</value>
+  </data>
+  <data name="ErrorMsg_Show_FailureDirectX_Caption" xml:space="preserve">
+    <value>DirectX エラー</value>
+  </data>
+  <data name="ErrorMsg_Show_MultipleStartup_Text" xml:space="preserve">
+    <value>muphic もしくは muphic 動作設定ツールが既に起動しています。</value>
+  </data>
+  <data name="ErrorMsg_Show_NumericUpDown" xml:space="preserve">
+    <value>%str1%は、%str2% から %str3% の間の数値を指定してください。</value>
+  </data>
+  <data name="ErrorMsg_Show_NumericUpDown_Caption" xml:space="preserve">
+    <value>無効な数値</value>
+  </data>
+  <data name="ErrorMsg_Show_ThreadException" xml:space="preserve">
+    <value>予期しないエラーが発生しました。
+%str1%
+
+muphic 動作設定ツールを終了します。
+
+エラーの詳細については、ログファイル
+"%str2%"
+を参照してください。</value>
+  </data>
+  <data name="Form_AdapterSelectComboBox_FailureAdapter" xml:space="preserve">
+    <value>有効なディスプレイ アダプタを検出できませんでした。</value>
+  </data>
+  <data name="HelpText_ConfWindow_AutoSave" xml:space="preserve">
+    <value>このチェックボックスをオンにすると、指定された時間間隔 (分単位) で、作成中の曲や物語が自動的に保存 (バックアップ) されるようになります。何らかの理由で muphic が不具合を起こした場合などでも、作成中の曲や物語が失われるのをある程度防ぐことができます。</value>
+  </data>
+  <data name="HelpText_ConfWindow_AutoSave_Title" xml:space="preserve">
+    <value>自動保存の設定</value>
+  </data>
+  <data name="HelpText_ConfWindow_CanUseSavedScoreInMakeStory" xml:space="preserve">
+    <value>このチェックボックスをオンにすると、ものがたりおんがくモードの作曲画面で、ひとりでおんがくモードで作曲した過去の作品を読み込んで使用できるようになります。ですが、ものがたりおんがくモードのコンセプト (物語から連想し作曲する) から外れるため、推奨しません。</value>
+  </data>
+  <data name="HelpText_ConfWindow_CanUseSavedScoreInMakeStory_Title" xml:space="preserve">
+    <value>ものがたりおんがくモードでの既存の曲の利用</value>
+  </data>
+  <data name="HelpText_ConfWindow_Default" xml:space="preserve">
+    <value>各設定項目にマウスポインタを乗せると、ここに説明が表示されます。</value>
+  </data>
+  <data name="HelpText_ConfWindow_Default_Title" xml:space="preserve">
+    <value>設定項目の説明</value>
+  </data>
+  <data name="HelpText_ConfWindow_LimitMode" xml:space="preserve">
+    <value>それぞれのモードのチェックボックスをオンにすると、そのモードは muphic で選択できなくなります。
+授業で muphic を使用する際は、不要なモードのチェックボックスをオンにしておくことで、授業で使用しないモードが選択されてしまうのを防ぐことができます。</value>
+  </data>
+  <data name="HelpText_ConfWindow_LimitMode_Title" xml:space="preserve">
+    <value>機能の制限</value>
+  </data>
+  <data name="HelpText_ConfWindow_Logging" xml:space="preserve">
+    <value>このチェックボックスをオンにすると、指定したログファイルに muphic の動作に関する情報が保存されるようになります。muphic で何らかのエラーが発生した場合、その詳細や原因なども保存されるため、このログファイルを開発者に送付することで、問題を解決できる場合があります。</value>
+  </data>
+  <data name="HelpText_ConfWindow_Logging_Title" xml:space="preserve">
+    <value>ログ機能の設定</value>
+  </data>
+  <data name="HelpText_ConfWindow_OperationMode" xml:space="preserve">
+    <value>授業で児童が muphic を利用する場合は "授業用 (児童)" に設定することを推奨します。"授業用 (児童)" に設定すると、キーボード操作を無効化したり、不要な機能をオフにすることができ、児童が muphic 誤動作させる危険性を低減できます。</value>
+  </data>
+  <data name="HelpText_ConfWindow_OperationMode_Title" xml:space="preserve">
+    <value>動作モードの設定</value>
+  </data>
+  <data name="HelpText_ConfWindow_Print" xml:space="preserve">
+    <value>このチェックボックスをオンにすると、創作した物語や楽譜が印刷できるようになります。
+この機能を利用する際は、プリンタの一覧から印刷に使用するプリンタを選択してください。</value>
+  </data>
+  <data name="HelpText_ConfWindow_Print_Title" xml:space="preserve">
+    <value>印刷機能の設定</value>
+  </data>
+  <data name="HelpText_ConfWindow_SavePath" xml:space="preserve">
+    <value>muphic で作成した曲や物語の保存先を指定します。無闇に変更すると、これまでの作品が使用できなくなる可能性があるため注意してください。指定された保存先フォルダが存在する場合、"保存先" ラベルが青で表示されます。存在しない場合、設定適用時に作成されます。</value>
+  </data>
+  <data name="HelpText_ConfWindow_SavePath_Title" xml:space="preserve">
+    <value>作品の保存先の指定</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_Show_ConfirmCancel" xml:space="preserve">
+    <value>動作設定は変更されません。終了しますか？</value>
+  </data>
+  <data name="Message_Show_ConfirmCancel_Caption" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Message_Show_ConfirmReset" xml:space="preserve">
+    <value>設定されている値をクリアし、初期値に戻します。よろしいですか？</value>
+  </data>
+  <data name="Message_Show_ConfirmReset_Caption" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Message_Show_ReportSave" xml:space="preserve">
+    <value>動作設定が正常に変更されました。</value>
+  </data>
+  <data name="Message_Show_ReportSave_Caption" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="muphicConf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\muphicConf.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

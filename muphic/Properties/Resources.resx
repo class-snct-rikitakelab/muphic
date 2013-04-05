@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorMsg_DrawMgr_Show_FailureCreateDevice_Caption" xml:space="preserve">
+    <value>デバイス生成エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_DrawMgr_Show_FailureCreateDevice_Text" xml:space="preserve">
+    <value>ハードウェアアクセラレータ及びリファレンスラスタライザによる DirectX 描画デバイス生成に失敗しました。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・DirectX 9.0c が正しくインストールされていない。
+ ・ハードウェアが古いか、DirectX に対応していない。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+描画デバイス生成（第３プラン リファレンスラスタライザ・ソフトウェア頂点処理）に失敗した際に表示</comment>
+  </data>
+  <data name="ErrorMsg_DrawMgr_Show_FailureDirectXLoad_Caption" xml:space="preserve">
+    <value>DirectX エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_DrawMgr_Show_FailureDirectXLoad_Text" xml:space="preserve">
+    <value>プログラムの動作に必要なランタイムが不足しています。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・DirectX 9.0c がインストールされていない。
+
+エラーの詳細については、ログファイルを参照してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+初期化時の DirectX デバイス生成フェーズで何らかのエラーが発生した際に表示
+
+起動直後に DirectX オブジェクト生成テスト実行してるので表示される機会があるかは謎</comment>
+  </data>
+  <data name="ErrorMsg_DrawMgr_Show_FailureDisplayMode_Caption" xml:space="preserve">
+    <value>ディスプレイモードエラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_DrawMgr_Show_FailureDisplayMode_Text" xml:space="preserve">
+    <value>フルスクリーンによる muphic の起動に失敗しました。
+
+お使いのディスプレイは
+解像度 %str1% x %str2%, リフレッシュレート %str3%Hz
+に対応していません。
+
+muphic の設定を確認してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+フルスクリーンモードでのデバイス生成時、muphic のウィンドウサイズに適合するディスプレイモードが無かった際に表示
+
+%str1% : muphic のウィンドウサイズの横幅 x
+%str2% : muphic のウィンドウサイズの縦幅 y
+%str3% : 設定されたリフレッシュレート</comment>
+  </data>
+  <data name="ErrorMsg_LogFileMgr_Show_FailureCreate_Caption" xml:space="preserve">
+    <value>ログファイル生成エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_LogFileMgr_Show_FailureCreate_Text" xml:space="preserve">
+    <value>muphic ログファイル
+"%str1%"
+の作成に失敗しました。
+
+以下の原因である可能性があります。
+ ・既存ファイルが書き込み禁止になっている。
+ ・ログファイルのディレクトリへの書き込み権限が無い。
+
+ロギング機能は使用できませんが、muphic は動作できます。
+起動を続行しますか？</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+起動時にログファイルが生成できなかった際に表示
+
+%str1% : 生成する筈だったログファイルのパス</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_CheckDirectX_Caption" xml:space="preserve">
+    <value>DirectX エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_CheckDirectX_Text" xml:space="preserve">
+    <value>プログラムの動作に必要なランタイムが不足しています。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・DirectX 9.0c がインストールされていない。
+
+エラーの詳細については、ログファイルを参照してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+起動時に DirectX オブジェクトが生成できなかった際に表示
+
+%str1% : ログファイルのパス</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_ThreadExeption_Caption" xml:space="preserve">
+    <value>エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_ThreadExeption_Text" xml:space="preserve">
+    <value>予期しないエラーが発生しました。
+%str1%
+
+muphic を終了します。
+エラーの詳細については、ログファイルを参照してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+フォーム上でハンドルされなかった例外が発生した際に表示
+
+%str1%：例外メッセージ</comment>
+  </data>
+  <data name="ErrorMsg_SoundMgr_Show_FailureCreateDevice_Caption" xml:space="preserve">
+    <value>デバイス生成エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_SoundMgr_Show_FailureCreateDevice_Text" xml:space="preserve">
+    <value>DirectSound デバイスの生成に失敗しました。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・サウンドデバイスが無効になっている。
+ 　（あるいは、インストールされていない。）</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+サウンドデバイス生成に失敗した際に表示</comment>
+  </data>
+  <data name="Msg_Common_ScreenTransition" xml:space="preserve">
+    <value>画面遷移</value>
+    <comment>画面遷移の情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_CompositionScr_EndEntitle" xml:space="preserve">
+    <value>題名入力画面 -&gt; 作曲画面 (曲名入力完了 "%str1%")</value>
+    <comment>題名入力画面から作曲画面へ遷移した際にログ表示
+%str1% : 曲名</comment>
+  </data>
+  <data name="Msg_CompositionScr_StartEntitle" xml:space="preserve">
+    <value>作曲画面 -&gt; 題名入力画面 (曲名入力開始)</value>
+    <comment>作曲画面から題名入力画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_ChangeIsWindow_Failure" xml:space="preserve">
+    <value>切り替え失敗 (%str1%モード -&gt; %str2%モード)</value>
+    <comment>ウィンドウモー/フルスクリーンモードの切り替えに失敗した際にログ表示
+%str1% : 切替前のモード
+%str2% : 切替に失敗したモード</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice" xml:space="preserve">
+    <value>DirectX -Direct3D デバイス生成</value>
+    <comment>描画デバイス生成時にログ表示した際のタイトル</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice_Failure" xml:space="preserve">
+    <value>失敗 (DirectX 9.0cがインストールされていないか、ハードウェア未対応のため、muphicを起動できませんでした)</value>
+    <comment>描画デバイス生成失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice_HH" xml:space="preserve">
+    <value>ハードウェアアクセラレータ及びハードウェア頂点処理 (最上位のパフォーマンスです)</value>
+    <comment>最上位パフォーマンスで描画デバイス生成した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice_HS" xml:space="preserve">
+    <value>ハードウェアアクセラレータ及びソフトウェア頂点処理 (中程度のパフォーマンスです)</value>
+    <comment>中位パフォーマンスで描画デバイス生成した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice_SS" xml:space="preserve">
+    <value>リファレンスラスタライザ及びソフトウェア頂点処理 (最も低いパフォーマンスです)</value>
+    <comment>最低パフォーマンスで描画デバイス生成した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_LoadTextureFile" xml:space="preserve">
+    <value>テクスチャファイル ロード</value>
+    <comment>統合画像ファイルの読み込みの際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_LoadTextureFile_Failure_Reason_Loaded" xml:space="preserve">
+    <value>読込済みのためスキップ "%str1%"</value>
+    <comment>統合画像ファイルの読み込みに失敗（既に読み込んでいたため）した際にログ表示
+%str1% : 読み込む筈だった統合画像ファイル</comment>
+  </data>
+  <data name="Msg_DrawMgr_LoadTextureFile_Failure_Reason_NotExist" xml:space="preserve">
+    <value>失敗 (テクスチャファイル %str1% は存在しない)</value>
+    <comment>統合画像ファイルの読み込みに失敗（ファイルが見つからないため）した際にログ表示
+%str1% : 読み込む筈だった統合画像ファイル</comment>
+  </data>
+  <data name="Msg_DrawMgr_ResetDevice" xml:space="preserve">
+    <value>デバイス再生成</value>
+    <comment>デバイスが再生成された際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_UnloadTextureFile" xml:space="preserve">
+    <value>統合画像ファイル (png+txt) 解放</value>
+    <comment>統合画像ファイルの解放の際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_UnloadTextureFile_Failure_Reason_NotExist" xml:space="preserve">
+    <value>失敗 (テクスチャファイル %str1% は存在しない)</value>
+    <comment>統合画像ファイルの解放に失敗（ファイルが見つからないため）した際にログ表示
+%str1% : 解放する筈だった統合画像ファイル</comment>
+  </data>
+  <data name="Msg_DrawMgr_UnloadTextureFile_Failure_Reason_Unloaded" xml:space="preserve">
+    <value>失敗 (テクスチャファイル %str1% は読み込まれていない)</value>
+    <comment>統合画像ファイルの解放に失敗（読み込まれていないため）した際にログ表示
+%str1% : 解放する筈だった統合画像ファイル</comment>
+  </data>
+  <data name="Msg_LogfileMgr_EndLogging" xml:space="preserve">
+    <value>ロギング終了</value>
+    <comment>LogFileManager がロギングを終了した際にログ表示</comment>
+  </data>
+  <data name="Msg_LogfileMgr_LogfileHeader" xml:space="preserve">
+    <value>===================================================================
+  muphic ログファイル  -- System Version %str1%
+===================================================================
+※先頭に $ が付いているメッセージは Debug ビルド時のみのメッセージです。Release ビルド時は出力されません。
+※先頭に # ERROR # が付いているメッセージがある場合、何らかのエラーが発生しています。システム開発者に問い合わせてください。
+</value>
+    <comment>ログファイルのヘッダ部
+
+%str1% : muphic のバージョン</comment>
+  </data>
+  <data name="Msg_LogFileMgr_StartLogging" xml:space="preserve">
+    <value>ロギング開始</value>
+    <comment>LogFileManager がロギングを開始した際にログ表示</comment>
+  </data>
+  <data name="Msg_LogfileMgr_Uptime" xml:space="preserve">
+    <value>起動時間</value>
+    <comment>起動時間をログ出力する際のタイトル</comment>
+  </data>
+  <data name="Msg_MainWindow_ButtonClick" xml:space="preserve">
+    <value>ボタンクリック</value>
+    <comment>ボタンクリック時の情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_MainWindow_CheckMultipleStartup" xml:space="preserve">
+    <value>多重起動チェック</value>
+    <comment>muphic の多重起動チェック実施時にログ表示される際のタイトル</comment>
+  </data>
+  <data name="Msg_MainWindow_CheckMultipleStartup_Failure" xml:space="preserve">
+    <value>mutex 所有権取得失敗 ::: muphic 起動済みのためプログラム終了
+</value>
+    <comment>muphic 多重起動チェック実施時に、既に起動していると判断した際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_CheckMultipleStartup_Success" xml:space="preserve">
+    <value>mutex 初期所有権取得 ::: muphic 起動処理開始
+</value>
+    <comment>muphic 多重起動チェック実施時に、正常起動できると判断した際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_KeyPress" xml:space="preserve">
+    <value>キー入力</value>
+    <comment>キー入力時の情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_MainWindow_KeyPress_AltEnter" xml:space="preserve">
+    <value>Alt + Enter（表示モード切替）</value>
+    <comment>Alt+Enter キーが入力された際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_KeyPress_Block" xml:space="preserve">
+    <value>Client 動作のため、キーボード操作はブロックされます。</value>
+    <comment>Client 動作時にキー入力がブロックされた際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_KeyPress_Esc" xml:space="preserve">
+    <value>Escape (プログラム終了)</value>
+    <comment>Escape キーが入力された際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_KeyPress_ShiftKey" xml:space="preserve">
+    <value>Shift</value>
+    <comment>Shift キーが入力された際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_EndComposition" xml:space="preserve">
+    <value>作曲画面 -&gt; 物語作成画面 (ページ %str1% 作曲終了)</value>
+    <comment>物語作成画面から作曲画面へ画面遷移した際にログ表示
+%str1% : CurrentPage</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_EndEntitle" xml:space="preserve">
+    <value>題名入力画面 -&gt; 物語作成画面 (物語名入力完了 "%str1%")</value>
+    <comment>題名入力画面から物語作成画面へ遷移した際にログ表示
+%str1% : 物語名</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_EndInputSentence" xml:space="preserve">
+    <value>文章入力画面 -&gt; 物語作成画面 )ページ %str1% 文章入力完了 "%str2%")</value>
+    <comment>文章入力画面から物語作成画面へ遷移した際にログ表示
+%str1% : CurrentPage
+%str2% : 文章</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_StartComposition" xml:space="preserve">
+    <value>物語作成画面 -&gt; 作曲画面 (ページ %str1% 作曲開始)</value>
+    <comment>物語作成画面から作曲画面へ画面遷移した際にログ表示
+%str1% : CurrentPage</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_StartEntitle" xml:space="preserve">
+    <value>物語作成画面 -&gt; 題名入力画面 (物語名入力開始)</value>
+    <comment>物語作成画面から題名入力画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_StartInputSentence" xml:space="preserve">
+    <value>物語作成画面 -&gt; 文章入力画面 (ページ %str1% 文章入力開始)</value>
+    <comment>物語作成画面から文章入力画面へ遷移した際にログ表示
+%str1% : CurrentPage</comment>
+  </data>
+  <data name="Msg_SoundMgr_CreateDevice" xml:space="preserve">
+    <value>DirectX -DirectSound デバイス生成</value>
+    <comment>サウンドデバイス生成時にログ表示した際のタイトル</comment>
+  </data>
+  <data name="Msg_SoundMgr_CreateDevice_Failure" xml:space="preserve">
+    <value>失敗 (サウンドデバイスがインストールされていない等の原因により、muphic を起動できませんでした)</value>
+    <comment>サウンドデバイスの生成に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_SoundMgr_CreateDevice_Priority" xml:space="preserve">
+    <value>優先強調レベル設定 (推奨される設定です)</value>
+    <comment>サウンドデバイスを推奨設定で生成した際にログ表示</comment>
+  </data>
+  <data name="Msg_SysInfoMgr_GetAdapterInfo" xml:space="preserve">
+    <value>システム環境 (Graphic Adaptor)</value>
+    <comment>取得したグラフィックアダプタの情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_SysInfoMgr_GetAvailableMemorySize" xml:space="preserve">
+    <value>使用可能な物理メモリ (空き)</value>
+    <comment>取得した空きメモリの情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_SysInfoMgr_GetTotalMemorySize" xml:space="preserve">
+    <value>使用可能な物理メモリ (最大)</value>
+    <comment>取得した最大メモリの情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_SysInfoMgr_GetWindowsInfo" xml:space="preserve">
+    <value>システム環境 (Operating System)</value>
+    <comment>取得した Windows OS の情報をログ表示する際のタイトル</comment>
+  </data>
+  <data name="Msg_TopScr_Click_EndButton" xml:space="preserve">
+    <value>”おわり”ボタン (プログラム終了)</value>
+    <comment>トップ画面の"おわり"ボタンがクリックされた際にログ表示</comment>
+  </data>
+  <data name="Msg_TopScr_EndOneScreen" xml:space="preserve">
+    <value>ひとりでおんがくモード -&gt; トップ画面</value>
+    <comment>ひとりでおんがく画面（作曲画面）からトップ画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_TopScr_EndStoryScreen" xml:space="preserve">
+    <value>ものがたりおんがくモード -&gt; トップ画面</value>
+    <comment>ものがたりおんがく画面（物語作成画面）からトップ画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_TopScr_StartOneScreen" xml:space="preserve">
+    <value>トップ画面 -&gt; ひとりでおんがくモード</value>
+    <comment>トップ画面からひとりでおんがく画面（作曲画面）へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_TopScr_StartStoryScreen" xml:space="preserve">
+    <value>トップ画面 -&gt; ものがたりおんがくモード</value>
+    <comment>トップ画面からものがたりおんがく画面（物語作成画面）へ遷移した際にログ表示</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_UnhandledException" xml:space="preserve">
+    <value>エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_UnhandledException_Text" xml:space="preserve">
+    <value>予期しないエラーが発生しました。
+%str1%
+
+muphic を終了します。
+エラーの詳細については、ログファイルを参照してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+メインスレッド以外でハンドルされない例外が発生した際に表示
+
+%str1% : 例外メッセージ</comment>
+  </data>
+  <data name="Msg_DrawMgr_ChangeIsWindow_Success" xml:space="preserve">
+    <value>切り替え (%str1%モード -&gt; %str2%モード)</value>
+    <comment>ウィンドウモー/フルスクリーンモードの切り替わった際にログ表示
+%str1% : 切替前のモード
+%str2% : 切替後のモード</comment>
+  </data>
+  <data name="Msg_DrawMgr_CreateDevice_DisplayMode" xml:space="preserve">
+    <value>DirectX -ディスプレイ表示モード</value>
+    <comment>描画デバイス生成後、ディスプレイモードをログ表示した際のタイトル</comment>
+  </data>
+  <data name="Msg_DrawMgr_FullScreenMode" xml:space="preserve">
+    <value>全画面表示</value>
+    <comment>フルスクリーンモード</comment>
+  </data>
+  <data name="Msg_DrawMgr_WindowMode" xml:space="preserve">
+    <value>ウィンドウ表示</value>
+    <comment>ウィンドウモード</comment>
+  </data>
+  <data name="Msg_MainWindow_StartupPhase_Complete" xml:space="preserve">
+    <value>起動フェーズ完了, メインループ開始
+</value>
+    <comment>メインウィンドウの生成が完了した際にログ表示</comment>
+  </data>
+  <data name="Msg_MainWindow_ThreadExeption" xml:space="preserve">
+    <value>フォーム上でハンドルされない例外が発生しました。</value>
+    <comment>フォーム上でハンドルされない例外が発生した際のログ表示のタイトル</comment>
+  </data>
+  <data name="Msg_MainWindow_UnhandledException" xml:space="preserve">
+    <value>アプリケーションでハンドルされない例外が発生しました。</value>
+    <comment>メイン・スレッド以外でハンドルされない例外が発生した際のログ表示のタイトル</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_AutoSave" xml:space="preserve">
+    <value>物語データ 自動保存</value>
+    <comment>物語作成中に物語が自動保存される際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_AutoSaveFileDelete_Failure" xml:space="preserve">
+    <value>自動保存データ削除 失敗</value>
+    <comment>自動保存データの削除に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_OneScr_AutoSave" xml:space="preserve">
+    <value>楽譜データ 自動保存</value>
+    <comment>物語作成中に物語が自動保存される際にログ表示</comment>
+  </data>
+  <data name="Msg_OneScr_AutoSaveFileDelete_Failure" xml:space="preserve">
+    <value>自動保存データ削除 失敗</value>
+    <comment>自動保存データの削除に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileReader_Deserialize_Failure" xml:space="preserve">
+    <value>XML 読込 / 逆シリアル化 失敗</value>
+    <comment>ファイル読み込みと XML からの逆シリアル化に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileReader_Deserialize_Success" xml:space="preserve">
+    <value>XML 読込 / 逆シリアル化 成功</value>
+    <comment>ファイル読み込みと XML からの逆シリアル化に成功した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileReader_FileNotFound" xml:space="preserve">
+    <value>データ読込 失敗 (ファイルが存在しない)</value>
+    <comment>読み込み先のファイルが存在しなかった際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileReader_GetFileList_Failure" xml:space="preserve">
+    <value>ファイル一覧取得 失敗</value>
+    <comment>指定されたフォルダ内のファイル一覧の取得に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileWriter_CreateDirectoryFailure" xml:space="preserve">
+    <value>保存先のディレクトリ生成失敗</value>
+    <comment>XML への書き込みの前に、保存先のディレクトリの生成に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileWriter_CreateDirectoryFailure_PathTooLong" xml:space="preserve">
+    <value>保存先のディレクトリ生成失敗 (パス名が長すぎる)</value>
+    <comment>XML への書き込みの前に、保存先パス名が長すぎるためにディレクトリの生成に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileWriter_FileWrite_Failure" xml:space="preserve">
+    <value>XML ファイル生成 / 保存 失敗</value>
+    <comment>書き込み先のファイルの生成、もしくは書き込みに失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileWriter_Serialize_Failure" xml:space="preserve">
+    <value>XML シリアル化 失敗</value>
+    <comment>XML へのシリアル化に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_XmlFileWriter_Serialize_Success" xml:space="preserve">
+    <value>XML シリアル化 / 保存 成功</value>
+    <comment>XML へのシリアル化と書き込みに成功した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_EndPlayStory" xml:space="preserve">
+    <value>物語再生画面 -&gt; 物語作成画面</value>
+    <comment>物語再生画面から物語作成画面へ画面遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_StartPlayStory" xml:space="preserve">
+    <value>物語作成画面 -&gt; 物語再生画面</value>
+    <comment>物語作成画面から物語再生画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_NonTitle" xml:space="preserve">
+    <value>題名なし</value>
+    <comment>タイトル未設定時のログ出力メッセージ用文字列</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_MultipleStartup" xml:space="preserve">
+    <value>muphic 多重起動エラー</value>
+    <comment>下記メッセージのウィンドウタイトル</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_MultipleStartup_Text" xml:space="preserve">
+    <value>muphic が既に起動されていることを検出しました。
+現在動作中の muphic を終了させてから、再度実行してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+動作設定モードでの起動時に多重起動を検出した際に表示</comment>
+  </data>
+  <data name="Msg_ArchiveController_ArchiveFile_NotFound" xml:space="preserve">
+    <value>アーカイブ展開失敗 (ファイルが見つからない)</value>
+    <comment>ファイル読み込みとアーカイブの展開に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_ArchiveController_ArchiveFileOpen_Failure" xml:space="preserve">
+    <value>アーカイブ展開失敗 (Stream が開けない)</value>
+    <comment>ファイル読み込みとアーカイブの展開に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_ArchiveController_ArchiveFileOpenFailureException" xml:space="preserve">
+    <value>ファイル "%str1%" の読込に失敗しました。</value>
+    <comment>ファイル読み込みとアーカイブの展開に失敗した際にログ表示</comment>
+  </data>
+  <data name="ErrorMsg_ArchiveMgr_Show_FailureArchiveLoad_Caption" xml:space="preserve">
+    <value>ファイル読み込みエラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_ArchiveMgr_Show_FailureArchiveLoad_Text" xml:space="preserve">
+    <value>起動に必要なファイル %str1% の読み込みに失敗しました。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・muphic が正常にインストールされていない
+ ・起動に必要なファイルが別のプログラムで使用されている
+
+エラーの詳細については、ログファイルを参照してください。</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+アーカイブ展開に失敗した際に表示</comment>
+  </data>
+  <data name="Msg_ArchiveController_ArchivedFileRead_Success" xml:space="preserve">
+    <value>アーカイブからファイル読込</value>
+    <comment>アーカイブ内のファイルの読み込みを行う際にログ表示</comment>
+  </data>
+  <data name="Msg_ArchiveController_ArchiveFileOpen_Success" xml:space="preserve">
+    <value>アーカイブ展開成功</value>
+    <comment>ファイル読み込みとアーカイブの展開に成功した際にログ表示</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Image_SplashWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SplashWindowImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_CompositionScr_EndShowScore" xml:space="preserve">
+    <value>楽譜画面 -&gt; 作曲画面</value>
+    <comment>楽譜画面から作曲画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_CompositionScr_StartShowScore" xml:space="preserve">
+    <value>作曲画面 -&gt; 楽譜画面</value>
+    <comment>作曲画面から楽譜画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_PrintMgr_PrintEnd" xml:space="preserve">
+    <value>印刷終了</value>
+    <comment>印刷完了時にログ表示</comment>
+  </data>
+  <data name="Msg_PrintMgr_Printing" xml:space="preserve">
+    <value>印刷中</value>
+    <comment>ページ印刷時にログ表示</comment>
+  </data>
+  <data name="Msg_PrintMgr_PrintStart" xml:space="preserve">
+    <value>印刷開始</value>
+    <comment>印刷が開始された際にログ表示</comment>
+  </data>
+  <data name="Msg_PrintMgr_Printing_Page" xml:space="preserve">
+    <value>ページ : %str1% / %str2%</value>
+    <comment>ページ印刷中に、現在印刷しているページ番号をログ表示</comment>
+  </data>
+  <data name="Msg_PrintMgr_PrintStart_PrinterName" xml:space="preserve">
+    <value>使用プリンタ : %str1%</value>
+    <comment>印刷が開始された際、使用するプリンタをログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_Submit" xml:space="preserve">
+    <value>作品提出 (ものがたりおんがく)</value>
+    <comment>ものがたりおんがくモードで、作品の提出を行う際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_Submit_Failure" xml:space="preserve">
+    <value>失敗</value>
+    <comment>ものがたりおんがくモードで、作品の提出に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_Submit_Success" xml:space="preserve">
+    <value>完了</value>
+    <comment>ものがたりおんがくモードで、作品の提出が完了した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopy" xml:space="preserve">
+    <value>ファイルコピー開始</value>
+    <comment>作品の提出等で、ファイルをコピーする際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult" xml:space="preserve">
+    <value>ファイルコピー結果</value>
+    <comment>作品の提出等で、ファイルのコピーの結果をログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult_Failure_DstEmpty" xml:space="preserve">
+    <value>失敗 (コピー先が未設定)</value>
+    <comment>作品の提出等で、コピー先未設定のためコピーに失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult_Failure_DstRootNotFound" xml:space="preserve">
+    <value>失敗 (コピー先ルートディレクトリが存在しない)</value>
+    <comment>作品の提出等で、コピー先のルートディレクトリが見つからずコピーに失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult_Failure_Exception" xml:space="preserve">
+    <value>失敗 (下記例外参照)</value>
+    <comment>作品の提出等で、何らかの例外が発生しコピーに失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult_Failure_SrcFileNotFound" xml:space="preserve">
+    <value>失敗 (コピー元ファイルが存在しない)</value>
+    <comment>作品の提出等で、元のファイルが見つからずコピーに失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopyResult_Success" xml:space="preserve">
+    <value>成功</value>
+    <comment>作品の提出等でのファイルのコピーに成功した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_FileCopy_Path" xml:space="preserve">
+    <value>%str1% -&gt; %str2%</value>
+    <comment>作品の提出等で、ファイルをコピーする際にそのパスをログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_GetHostAddress_Failue" xml:space="preserve">
+    <value>ホスト名 / IP アドレスの取得失敗</value>
+    <comment>実行されているコンピュータのホスト名または IP アドレスの取得に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_IsNetworkAvailable" xml:space="preserve">
+    <value>ネットワーク接続状況</value>
+    <comment>ネットワーク接続状況をチェックした際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_IsNetworkAvailable_False" xml:space="preserve">
+    <value>利用不可</value>
+    <comment>ネットワークが利用不可能な状態だった際にログ表示</comment>
+  </data>
+  <data name="Msg_NetworkMgr_IsNetworkAvailable_True" xml:space="preserve">
+    <value>利用可能 - %str1%</value>
+    <comment>ネットワークが利用可能な状態だった際に、IP アドレスと共にログ表示</comment>
+  </data>
+  <data name="muphic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\muphic.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_FrameMgr_CheckUsedMemory" xml:space="preserve">
+    <value>起動後 %str1% 分経過 -- 推定メモリ使用量 %str2%</value>
+    <comment>規定の間隔でメモリ使用量をログ出力</comment>
+  </data>
+  <data name="Msg_CompositionScr_CodeLimitMode_OFF" xml:space="preserve">
+    <value>作曲時の音階制限機能が無効化されました</value>
+    <comment>作曲時に配置できる音階を制限する機能が無効になった際にログ表示</comment>
+  </data>
+  <data name="Msg_CompositionScr_CodeLimitMode_ON" xml:space="preserve">
+    <value>作曲時の音階制限機能が有効になりました</value>
+    <comment>作曲時に配置できる音階を制限する機能が有効になった際にログ表示</comment>
+  </data>
+  <data name="ErrorMsg_Log_ThreadException" xml:space="preserve">
+    <value>● %str1% に発生した例外 =====
+%str2%
+このエラーに関する情報を、開発者に問い合わせてください。
+
+</value>
+    <comment>例外発生時のエラーログへの書き込みメッセージ
+
+%str1% : 発生日時
+%str2% : 例外の詳細</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_CloseStoryExplorer" xml:space="preserve">
+    <value>提出作品管理画面 -&gt; 物語作成画面</value>
+    <comment>提出作品管理画面から物語作成画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_MakeStoryScr_ShowStoryExplorer" xml:space="preserve">
+    <value>物語作成画面 -&gt; 提出作品管理画面</value>
+    <comment>物語作成画面から提出作品管理画面へ遷移した際にログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_TextureLoadTime" xml:space="preserve">
+    <value>%str1% ミリ秒</value>
+    <comment>統合画像ファイルの読み込み時間をログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_TextureLoadTime_Title" xml:space="preserve">
+    <value />
+    <comment>統合画像ファイルの読み込み時間をログ表示</comment>
+  </data>
+  <data name="Msg_DrawMgr_LoadTextureFile_Failure_Reason_NotExist_" xml:space="preserve">
+    <value>テクスチャファイル %str1% がアーカイブ内に存在しないため、読み込みに失敗しました。アーカイブと muphic のバージョンが一致していない可能性があります。</value>
+    <comment>統合画像ファイルの読み込みに失敗（ファイルが見つからないため）した際にエラー表示
+%str1% : 読み込む筈だった統合画像ファイル</comment>
+  </data>
+  <data name="EntitleExplain_PlayerName" xml:space="preserve">
+    <value>キミのなまえをおしえてね！</value>
+    <comment>題名入力画面の説明文。EntitleScreen のコンストラクタでこのプロパティを指定する。</comment>
+  </data>
+  <data name="EntitleExplain_ScoreTitle" xml:space="preserve">
+    <value>きょくの　なまえを　きめよう！</value>
+    <comment>題名入力画面の説明文。EntitleScreen のコンストラクタでこのプロパティを指定する。</comment>
+  </data>
+  <data name="EntitleExplain_StorySentence" xml:space="preserve">
+    <value>ものがたりに　ぶんしょうを　いれてみよう！</value>
+    <comment>題名入力画面の説明文。EntitleScreen のコンストラクタでこのプロパティを指定する。</comment>
+  </data>
+  <data name="EntitleExplain_StoryTitle" xml:space="preserve">
+    <value>ものがたりの　だいめいを　きめよう！</value>
+    <comment>題名入力画面の説明文。EntitleScreen のコンストラクタでこのプロパティを指定する。</comment>
+  </data>
+  <data name="ErrorMsg_InputMgr_Show_FailureCreateKeyboardDevice_Caption" xml:space="preserve">
+    <value>デバイス生成エラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_InputMgr_Show_FailureCreateKeyboardDevice_Text" xml:space="preserve">
+    <value>DirectInput キーボードデバイスの生成に失敗しました。
+muphic を起動できません。
+
+以下の原因である可能性があります。
+ ・キーボードデバイスが無効になっている。
+ 　（あるいは、インストールされていない。）</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+キーボードデバイス生成に失敗した際に表示</comment>
+  </data>
+  <data name="Msg_InputMgr_CreateKeyboardDevice" xml:space="preserve">
+    <value>DirectX -DirectInput デバイス生成</value>
+    <comment>キーボードデバイス生成時にログ表示した際のタイトル</comment>
+  </data>
+  <data name="Msg_InputMgr_CreateKeyboardDevice_Failure" xml:space="preserve">
+    <value>失敗 (キーボードがインストールされてない等の原因により、muphic を起動できませんでした)</value>
+    <comment>キーボードデバイスを生成に失敗した際にログ表示</comment>
+  </data>
+  <data name="Msg_InputMgr_CreateKeyboardDevice_Success" xml:space="preserve">
+    <value>キーボード: 協調レベル設定 (完了)</value>
+    <comment>キーボードデバイスを生成した際にログ表示</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_CheckEssentialFiles_Caption" xml:space="preserve">
+    <value>ファイル読み込みエラー</value>
+    <comment>下記メッセージウィンドウのタイトル</comment>
+  </data>
+  <data name="ErrorMsg_MainWindow_Show_CheckEssentialFiles_Text" xml:space="preserve">
+    <value>起動に必要なファイル以下のファイルが見つからないため、muphic を起動できません。
+%str1%
+以下の原因である可能性があります。
+ ・muphic が正常にインストールされていない
+ ・起動に必要なファイルが別のプログラムで使用されている</value>
+    <comment>エラーメッセージ（メッセージウィンドウ）
+起動に必要なファイルが存在せず失敗した際に表示</comment>
+  </data>
+</root>

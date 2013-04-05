@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TextureListMaker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="SaveFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoAddFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G:\My Documents\SNCT Works\Takayuki Lab\専攻研究\muphic\画像／画面設計\新システム統合画像（Photoshop）</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

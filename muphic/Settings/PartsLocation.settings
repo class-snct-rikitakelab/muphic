@@ -1,0 +1,219 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Muphic.Settings" GeneratedClassName="PartsLocation">
+  <Profiles />
+  <Settings>
+    <Setting Name="OneScr_BackBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">10, 10</Value>
+    </Setting>
+    <Setting Name="OneScr_WindowLabel" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">615, 66</Value>
+    </Setting>
+    <Setting Name="TopScr_OneBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">356, 276</Value>
+    </Setting>
+    <Setting Name="TopScr_LinkBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">586, 276</Value>
+    </Setting>
+    <Setting Name="TopScr_StoryBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">472, 355</Value>
+    </Setting>
+    <Setting Name="TopScr_EndBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">468, 500</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">0, 0, 800, 600</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_BackBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">10, 10</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_TitleBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">110, 10</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_SaveBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">540, 10</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_LoadBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">620, 10</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PrintBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">710, 10</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CreateNewBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">9, 107</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PlayBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">702, 65</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CompositionBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">705, 510</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn0" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">6, 186</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn1" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">57, 216</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn2" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">6, 244</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn3" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">57, 273</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn4" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">57, 357</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn5" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">6, 385</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn6" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">57, 414</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn7" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">6, 443</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn8" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">728, 186</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn9" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">677, 216</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn10" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">728, 244</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn11" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">677, 273</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn12" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">677, 357</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn13" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">728, 385</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn14" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">677, 414</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_CategoryBtn15" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">728, 443</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_DeleteBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">520, 500</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_AllDeleteBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">605, 500</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_SentenceBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">10, 550</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Thumb0" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">183, 87</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Thumb1" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">272, 87</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Thumb2" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">361, 87</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Thumb3" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">450, 87</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Thumb4" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">539, 87</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_ThumbLeft" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">127, 88</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_ThumbRight" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">630, 88</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Title" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">202, 22</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_Sentence" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">107, 562</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PictureArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">123, 154, 551, 341</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_BackgroundPlaceArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">123, 154, 551, 341</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_BackgroundSkyArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">123, 154, 551, 123</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampSelectArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">81, 495, 430, 54</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PictureFrameTop" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">123, 154</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PictureFrameBottom" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">123, 473</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PictureFrameLeft" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">123, 176</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_PictureFrameRight" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">658, 176</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn0" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">85, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn1" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">135, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn2" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">185, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn3" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">235, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn4" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">300, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn5" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">350, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn6" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">400, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_StampBtn7" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">450, 498</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_ThumbnailArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">114, 60, 572, 88</Value>
+    </Setting>
+    <Setting Name="SplashWindow_VersionLabel" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">298, 225</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">0, 0, 800, 600</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_PictureArea" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">125, 189, 551, 341</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_BackBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">10, 10</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_PlayBtn" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">702, 10</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_SentenceCenter" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">400, 568</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_TitleCenter" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">400, 51</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_StageTop" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">0, 100</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_StageLeft" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">0, 207</Value>
+    </Setting>
+    <Setting Name="PlayStoryScr_StageRight" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">652, 207</Value>
+    </Setting>
+    <Setting Name="MakeStoryScr_SubmitDiag_Anime" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">50, 154</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

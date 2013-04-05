@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ReleaseTool.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MuphicReleasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\muphic\bin\x86\Release\muphic.exe</Value>
+    </Setting>
+    <Setting Name="MuphicDebugPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\muphic\bin\x86\Debug\muphic.exe</Value>
+    </Setting>
+    <Setting Name="MuphicArchivePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\muphic\bin\x86\Archive\data01.dat</Value>
+    </Setting>
+    <Setting Name="MuphicConfPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\ConfigurationTool\bin\x86\Release\muphic 動作設定ツール.exe</Value>
+    </Setting>
+    <Setting Name="FileNotfoundTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">%str1%ファイルが見つかりません。</Value>
+    </Setting>
+    <Setting Name="FileNotfoundMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">パス : %str1%</Value>
+    </Setting>
+    <Setting Name="DistDirectoryName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.%str1%</Value>
+    </Setting>
+    <Setting Name="OverwriteMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">発行フォルダ %str1% は既に存在します。上書きしますか？</Value>
+    </Setting>
+    <Setting Name="OverwriteTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">上書き確認</Value>
+    </Setting>
+    <Setting Name="JpnKanaConversionDllReleasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\muphic\bin\x86\Release\JpnKanaConversion.dll</Value>
+    </Setting>
+    <Setting Name="JpnKanaConvHelperDllReleasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">muphic ver.7b\muphic\bin\x86\Release\JpnKanaConvHelper.dll</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
